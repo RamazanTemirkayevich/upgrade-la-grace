@@ -135,10 +135,17 @@
                 margin-left: 166px;
                 width: 718px;
                 height: 427px;
+
+                &>div {
+                    &>iframe {
+                        width: 713px;
+                    }
+                }
             }
 
             &-info {
                 margin-top: 25.52px;
+                margin-left: 42px;
                 display: flex;
                 flex-direction: column;
                 margin-left: 42px;

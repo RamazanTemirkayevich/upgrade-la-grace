@@ -224,8 +224,13 @@
             width: 100%;
 
             &__img {
-                &-next {
-                    margin-left: 92em;
+                &-btn {
+                    &.prev {
+                        left: 13em;
+                    }
+                    &.next {
+                        right: 12em;
+                    }
                 }
             }
         }

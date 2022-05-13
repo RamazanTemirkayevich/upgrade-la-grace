@@ -316,6 +316,12 @@
                     margin-top: 26em;
                 }
             }
+
+            @media (min-width: 524px) {
+                &-text {
+                    margin-top: 30em;
+                }
+            }
         }
 
         &__terrace {
@@ -348,6 +354,10 @@
             &-text {
                 margin-top: 42em;
             }
+        }
+
+        &__terrace {
+            height: unset;
         }
     }
 }

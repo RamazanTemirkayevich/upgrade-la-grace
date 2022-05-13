@@ -103,7 +103,8 @@
             }
     
             &-text {
-                margin-top: 20px;
+                width: 450px;
+                margin: 20px auto;
                 font-size: 16px;
                 line-height: 150%;
                 text-align: center;
@@ -116,6 +117,7 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                top: unset;
             }
         }
     }

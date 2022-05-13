@@ -199,6 +199,9 @@
         }
 
         &-gift {
+            &__text {
+                text-align: center;
+            }
             &__vectors {
                 width: 100%;
             }
@@ -206,9 +209,45 @@
     }
 }
 
+@media (min-width: 414px) {
+    .hotel {
+        &-block {
+            &__text {
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) {
+    .hotel {
+        &-block {
+            &__text {
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .hotel {
+        &-block {
+            &__text {
+                margin-top: 8em;
+            }
+        }
+    }
+}
+
+@media (min-width: 631px) {
+    .hotel {
+        margin: 15em auto auto auto;
+    }
+}
+
 @media (min-width: 768px) {
     .hotel {
-        margin: 60vh auto auto;
+        margin: 20em auto auto auto;
 
         &-block {
             &__img {
@@ -219,7 +258,19 @@
             }
 
             &__text {
-                margin-top: 50vh;
+                margin-top: 20em;
+            }
+
+            @media (min-width: 800px) {
+                &__text {
+                    margin-top: 25em;
+                }
+            }
+        }
+
+        &-gift {
+            &__text {
+                text-align: justify;
             }
         }
     }

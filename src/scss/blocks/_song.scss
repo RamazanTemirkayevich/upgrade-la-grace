@@ -100,7 +100,7 @@
 
 @media (min-width: 320px) {
     .song-block {
-        margin: 25em auto auto auto;
+        margin: 39em auto auto auto;
         width: 100%;
 
         &__title {
@@ -152,8 +152,15 @@
     }
 }
 
+@media (min-width: 524px) {
+    .song-block {
+        margin: 37em auto auto auto;
+    }
+}
+
 @media (min-width: 768px) {
     .song-block {
+        margin: 50em auto auto auto;
         width: 700px;
     }
 }
@@ -215,7 +222,7 @@
                 }
     
                 &__vectors {
-                    margin: 62px auto auto;
+                    margin: 7em auto auto;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
