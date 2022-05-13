@@ -1,0 +1,73 @@
+@import 'functions/variables';
+
+@import 'blocks/header';
+@import 'blocks/first';
+@import 'blocks/second';
+@import 'blocks/third';
+@import 'blocks/fourth';
+@import 'blocks/fifth';
+@import 'blocks/sixth';
+@import 'blocks/seventh';
+@import 'blocks/song';
+@import 'blocks/tab';
+@import 'blocks/hotel';
+@import 'blocks/wedding';
+@import 'blocks/team';
+@import 'blocks/footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #333333;
+}
+
+body {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (min-width: 320px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        padding-left: 166px;
+        padding-right: 166px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}

@@ -1,0 +1,106 @@
+.second-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    width: 100%;
+
+    &__content {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            font-family: $ff;
+            font-size: 48px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: $lc;
+            color: $rgba-c;
+        }
+
+        &-text {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: $lc;
+            text-indent: 20px;
+            color: $rgba-c;
+        }
+    }
+
+    &__img {
+        width: 540px;
+        height: 540px;
+
+        &-item {
+            width: 100%;
+            height: 100%;
+            background: url('../../../img/second1.png') center no-repeat ;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .second-block {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 140px;
+        width: 100%;
+    
+        &__content {
+            width: 540px;
+            display: flex;
+            flex-direction: column;
+    
+            &-title {
+                font-family: $ff;
+                font-size: 48px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: $lc;
+                color: $rgba-c;
+            }
+    
+            &-text {
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                letter-spacing: $lc;
+                text-indent: 20px;
+                color: $rgba-c;
+            }
+        }
+    
+        &__img {
+            width: 540px;
+            height: 540px;
+    
+            &-item {
+                width: 100%;
+                height: 100%;
+                background: url('../../../img/second1.png') center no-repeat ;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .second-block {
+        flex-direction: column;
+        &__content {
+            width: 100%;
+            
+            &-title {
+                font-size: 33px;
+            }
+        }
+
+        &__img {
+            margin-top: 2em;
+            width: 100%;
+        }
+    }
+}

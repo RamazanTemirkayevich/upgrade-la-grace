@@ -1,0 +1,4477 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header {
+  width: 100%;
+  height: 518px;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img {
+  width: 100%;
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-track {
+  width: 100%;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-track__item {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-track__item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-track__item[data-active] {
+  width: 100%;
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-track__item::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.35);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 53, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 62, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-btn.prev {
+  left: 10px;
+}
+
+/* line 65, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__img-btn.next {
+  right: 10px;
+}
+
+/* line 71, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__btn {
+  position: absolute;
+  bottom: 25.38px;
+  width: 254.81px;
+  height: 60.62px;
+  background: #5A8CC1;
+  color: #FFFFFF;
+  font-family: "Alice";
+  font-size: 28px;
+  border: 1px solid #EBF1FD;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-main__btn > a {
+  color: #FFFFFF;
+  font-family: "Alice";
+  font-size: 28px;
+}
+
+/* line 92, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 136px;
+  top: 62px;
+  border-left: 2px solid #FFFFFF;
+  z-index: 2;
+}
+
+/* line 101, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-container__name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 29px;
+}
+
+/* line 106, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-container__name-title {
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFFFFF;
+  letter-spacing: 0.07em;
+}
+
+/* line 114, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+.header-container__name-subtitle {
+  margin-top: 10px;
+  font-family: "Alice";
+  color: #FFFFFF;
+  font-size: 28px;
+  letter-spacing: 0.07em;
+}
+
+@media (min-width: 375px) {
+  /* line 129, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__img-prev {
+    margin-left: 20px;
+  }
+  /* line 133, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__img-next {
+    margin-left: 23em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 146, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__img-next {
+    margin-left: 53em;
+  }
+  /* line 150, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__img-track__item {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 161, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main {
+    position: relative;
+  }
+  /* line 164, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__btn {
+    position: absolute;
+    bottom: 25.38px;
+    width: 254.81px;
+    height: 60.62px;
+    background: #5A8CC1;
+    color: #FFFFFF;
+    font-family: "Alice";
+    font-size: 28px;
+    border: 1px solid #EBF1FD;
+    cursor: pointer;
+    z-index: 2;
+  }
+  /* line 177, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__btn > a {
+    color: #FFFFFF;
+    font-family: "Alice";
+    font-size: 28px;
+  }
+  /* line 185, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 136px;
+    top: 62px;
+    border-left: 2px solid #FFFFFF;
+    z-index: 2;
+  }
+  /* line 194, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-container__name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 29px;
+  }
+  /* line 199, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-container__name-title {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFFFFF;
+    letter-spacing: 0.07em;
+  }
+  /* line 207, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-container__name-subtitle {
+    margin-top: 10px;
+    font-family: "Alice";
+    color: #FFFFFF;
+    font-size: 28px;
+    letter-spacing: 0.07em;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 220, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header {
+    width: 100%;
+  }
+  /* line 223, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main {
+    width: 100%;
+  }
+  /* line 227, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_header.scss */
+  .header-main__img-next {
+    margin-left: 92em;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__list {
+  margin-top: 39px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__list-item > a {
+  font-size: 24px;
+  font-family: "Alice";
+  color: #5A8CC1;
+}
+
+/* line 23, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1013px;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-name {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 675px;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-name__title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Alice";
+  font-size: 48px;
+  letter-spacing: 0.07em;
+}
+
+/* line 44, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9px;
+  width: 412px;
+}
+
+/* line 51, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 57, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 64, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-text {
+  margin-top: 21px;
+  width: 1013px;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-text > p {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  text-indent: 20px;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 78, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+.first-block__present-video {
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 730px;
+  height: 407px;
+}
+
+@media (min-width: 1024px) {
+  /* line 90, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  /* line 96, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list {
+    margin-top: 39px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list-item > a {
+    font-size: 24px;
+    font-family: "Alice";
+    color: #5A8CC1;
+  }
+  /* line 112, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1013px;
+  }
+  /* line 119, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-name {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 675px;
+  }
+  /* line 125, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-name__title {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Alice";
+    font-size: 48px;
+    letter-spacing: 0.07em;
+  }
+  /* line 133, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9px;
+    width: 412px;
+  }
+  /* line 140, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 146, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 153, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-text {
+    margin-top: 21px;
+    width: 1013px;
+  }
+  /* line 157, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-text > p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    text-indent: 20px;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 167, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-video {
+    margin-top: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 730px;
+    height: 407px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 181, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list {
+    flex-wrap: wrap-reverse;
+    width: 63%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* line 188, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list-item > a {
+    font-size: 25px;
+  }
+  /* line 194, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present {
+    width: 700px;
+  }
+  /* line 198, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-name__title {
+    font-size: 48px;
+  }
+  /* line 203, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-video {
+    height: 407px;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 212, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list {
+    flex-direction: column;
+    width: 67%;
+  }
+  /* line 216, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list-item {
+    margin-bottom: 10px;
+  }
+  /* line 219, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__list-item > a {
+    font-size: 18px;
+  }
+  /* line 225, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present {
+    width: 100%;
+  }
+  /* line 228, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-name {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  /* line 232, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-name__title {
+    font-size: 20px;
+  }
+  /* line 237, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-lines {
+    width: 100%;
+  }
+  /* line 241, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-text {
+    width: 100%;
+  }
+  /* line 245, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_first.scss */
+  .first-block__present-video {
+    width: 100%;
+    height: 244px;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+.second-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+  width: 100%;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+.second-block__content {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+.second-block__content-title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+.second-block__content-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+.second-block__img {
+  width: 540px;
+  height: 540px;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+.second-block__img-item {
+  width: 100%;
+  height: 100%;
+  background: url("../../../img/second1.png") center no-repeat;
+}
+
+@media (min-width: 1024px) {
+  /* line 45, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 140px;
+    width: 100%;
+  }
+  /* line 52, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__content {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 57, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__content-title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 66, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__content-text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 77, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__img {
+    width: 540px;
+    height: 540px;
+  }
+  /* line 81, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__img-item {
+    width: 100%;
+    height: 100%;
+    background: url("../../../img/second1.png") center no-repeat;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 91, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block {
+    flex-direction: column;
+  }
+  /* line 93, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__content {
+    width: 100%;
+  }
+  /* line 96, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__content-title {
+    font-size: 33px;
+  }
+  /* line 101, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_second.scss */
+  .second-block__img {
+    margin-top: 2em;
+    width: 100%;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block {
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block__img {
+  width: 540px;
+  height: 540px;
+}
+
+/* line 11, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block__img-item {
+  width: 100%;
+  height: 100%;
+  background: url("../../../img/second2.png") center no-repeat;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block__content-title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block__content-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 43, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+.third-block__content > svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 320px) {
+  /* line 52, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block {
+    flex-direction: column;
+  }
+  /* line 55, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__img {
+    width: 100%;
+  }
+  /* line 59, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__content {
+    width: 100%;
+    height: 597px;
+  }
+  /* line 63, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__content > svg {
+    right: 4em;
+    top: 30em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 72, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+  /* line 79, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__img {
+    width: 540px;
+    height: 540px;
+  }
+  /* line 83, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__img-item {
+    width: 100%;
+    height: 100%;
+    background: url("../../../img/second2.png") center no-repeat;
+  }
+  /* line 90, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+  }
+  /* line 96, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__content-title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 105, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__content-text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 115, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_third.scss */
+  .third-block__content > svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block {
+  margin: 140px auto auto;
+}
+
+/* line 4, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1110px;
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-items__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Alice";
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #5A8CC1;
+  width: 100%;
+  height: 52px;
+  transition: 0.7s;
+}
+
+/* line 61, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-items__item.active {
+  border: 1px solid #5A8CC1;
+  border-bottom: none;
+  color: #000000;
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body {
+  display: block;
+}
+
+/* line 71, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__block {
+  display: none;
+  margin-top: 80px;
+  right: 0;
+  width: 1260px;
+  height: 690px;
+  background: rgba(191, 219, 247, 0.2);
+  transition: 0.7s;
+}
+
+/* line 81, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__block:target {
+  display: flex;
+  transition: 0.7s;
+}
+
+/* line 86, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one {
+  position: relative;
+  width: 540px;
+  height: 100%;
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 97, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 103, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 112, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 118, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 127, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one-btn.prev {
+  left: 0;
+}
+
+/* line 130, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-one-btn.next {
+  right: 0;
+}
+
+/* line 136, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two {
+  position: relative;
+  width: 540px;
+  height: 100%;
+}
+
+/* line 141, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 147, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 153, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 162, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 168, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 177, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two-btn.prev {
+  left: 0;
+}
+
+/* line 180, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-two-btn.next {
+  right: 0;
+}
+
+/* line 186, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three {
+  position: relative;
+  width: 540px;
+  height: 100%;
+}
+
+/* line 191, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 197, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 203, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 212, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 218, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 227, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three-btn.prev {
+  left: 0;
+}
+
+/* line 230, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-three-btn.next {
+  right: 0;
+}
+
+/* line 236, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four {
+  position: relative;
+  width: 540px;
+  height: 100%;
+}
+
+/* line 241, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 247, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 253, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 262, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 268, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 277, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four-btn.prev {
+  left: 0;
+}
+
+/* line 280, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+.fourth-block__tabs-body__img-four-btn.next {
+  right: 0;
+}
+
+@media (min-width: 320px) {
+  /* line 290, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block {
+    width: 100%;
+    margin: 10em auto auto auto;
+  }
+  /* line 294, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__lines {
+    width: 100%;
+  }
+  /* line 298, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
+  /* line 303, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items {
+    flex-wrap: wrap;
+  }
+  /* line 305, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items__item {
+    font-size: 13px;
+  }
+  /* line 310, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body {
+    margin-top: 50px;
+    width: 100%;
+  }
+  /* line 314, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one {
+    width: 100%;
+  }
+  /* line 318, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-item > img {
+    height: unset;
+  }
+  /* line 323, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-btn {
+    top: 18%;
+  }
+  /* line 327, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one > p {
+    width: 100%;
+    margin: 30em auto auto auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 339, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two {
+    width: 100%;
+  }
+  /* line 343, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-item > img {
+    height: unset;
+  }
+  /* line 348, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-btn {
+    top: 24%;
+  }
+  /* line 352, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two > p {
+    width: 100%;
+    margin: 30em auto auto auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 364, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three {
+    width: 100%;
+  }
+  /* line 368, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-item > img {
+    height: unset;
+  }
+  /* line 373, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-btn {
+    top: 24%;
+  }
+  /* line 377, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three > p {
+    width: 100%;
+    margin: 30em auto auto auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 389, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four {
+    width: 100%;
+  }
+  /* line 393, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-item > img {
+    height: unset;
+  }
+  /* line 398, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-btn {
+    top: 24%;
+  }
+  /* line 402, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four > p {
+    width: 100%;
+    margin: 30em auto auto auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 414, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block {
+    margin: auto;
+    width: 100%;
+    height: unset;
+    flex-direction: column;
+  }
+  /* line 421, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:nth-child(1n+2) {
+    height: unset;
+  }
+  /* line 425, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:last-child {
+    height: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 434, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block {
+    max-width: 700px;
+  }
+  /* line 437, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs {
+    max-width: 100%;
+  }
+  /* line 440, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items {
+    flex-wrap: unset;
+  }
+  /* line 443, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items__item {
+    font-size: 14px;
+  }
+  /* line 450, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-btn {
+    top: 35%;
+  }
+  /* line 454, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one > p {
+    margin: 58em auto auto auto;
+  }
+  /* line 460, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-btn {
+    top: 35%;
+  }
+  /* line 464, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two > p {
+    margin: 58em auto auto auto;
+  }
+  /* line 470, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-btn {
+    top: 35%;
+  }
+  /* line 474, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three > p {
+    margin: 58em auto auto auto;
+  }
+  /* line 480, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-btn {
+    top: 35%;
+  }
+  /* line 484, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four > p {
+    margin: 58em auto auto auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 494, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block {
+    margin: 140px auto auto;
+    max-width: 1024px;
+  }
+  /* line 498, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 507, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 514, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 520, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 527, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1110px;
+  }
+  /* line 534, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* line 539, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alice";
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #5A8CC1;
+    width: 100%;
+    height: 52px;
+    transition: 0.7s;
+  }
+  /* line 555, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-items__item.active {
+    border: 1px solid #5A8CC1;
+    border-bottom: none;
+    color: #000000;
+  }
+  /* line 563, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body {
+    display: block;
+    margin-top: unset;
+  }
+  /* line 566, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block {
+    display: none;
+    margin-top: 80px;
+    right: 0;
+    width: 980px;
+    height: 43em;
+    background: rgba(191, 219, 247, 0.2);
+  }
+  /* line 575, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:nth-child(1n+2) {
+    height: 43em;
+  }
+  /* line 579, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:last-child {
+    height: 43em;
+  }
+  /* line 583, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:target {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  /* line 588, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:target > p {
+    margin-top: 4em;
+    margin-left: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    width: 539px;
+  }
+  /* line 602, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one {
+    position: relative;
+  }
+  /* line 605, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 611, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* line 617, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 626, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  /* line 632, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    top: 45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 641, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-btn.prev {
+    left: 0;
+  }
+  /* line 644, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-one-btn.next {
+    right: 0;
+  }
+  /* line 650, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two {
+    position: relative;
+  }
+  /* line 653, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 659, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* line 665, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 674, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  /* line 680, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    top: 37%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 689, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-btn.prev {
+    left: 0;
+  }
+  /* line 692, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-two-btn.next {
+    right: 0;
+  }
+  /* line 698, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three {
+    position: relative;
+  }
+  /* line 701, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 707, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* line 713, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 722, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  /* line 728, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 737, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-btn.prev {
+    left: 0;
+  }
+  /* line 740, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-three-btn.next {
+    right: 0;
+  }
+  /* line 746, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four {
+    position: relative;
+  }
+  /* line 749, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 755, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* line 761, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 770, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  /* line 776, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 785, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-btn.prev {
+    left: 0;
+  }
+  /* line 788, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__img-four-btn.next {
+    right: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 802, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:target {
+    width: 1220px;
+  }
+  /* line 805, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fourth.scss */
+  .fourth-block__tabs-body__block:target > p {
+    margin-left: 35px;
+    margin-top: 2em;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block {
+  margin: 140px auto auto;
+}
+
+/* line 4, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__first {
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 39, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__first-img {
+  width: 540px;
+  height: 690px;
+  background: url(/img/third1.jpg) center no-repeat;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__first-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 130px;
+  margin-left: 70px;
+  height: 485px;
+}
+
+/* line 54, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__first-text {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+
+/* line 62, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__first-vectors {
+  display: flex;
+  width: 467px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 70, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__second {
+  margin-top: 140px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 76, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__second-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 54px;
+  margin-right: 65px;
+  height: 485px;
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__second-text {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+
+/* line 93, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__second-vectors {
+  display: flex;
+  width: 467px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 100, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+.fifth-block__second-img {
+  width: 540px;
+  height: 540px;
+  background: url(/img/third2.jpg) center no-repeat;
+}
+
+@media (min-width: 1440px) {
+  /* line 111, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-box {
+    width: 505px;
+  }
+  /* line 117, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-box {
+    align-items: center;
+    width: 53vh;
+    height: 485px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 127, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block {
+    margin: 140px auto auto;
+    width: 100%;
+  }
+  /* line 131, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 140, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 147, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 153, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 160, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-wrap: unset;
+  }
+  /* line 166, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-img {
+    margin: unset;
+    width: 540px;
+    height: 690px;
+    background: url(/img/third1.jpg) center no-repeat;
+  }
+  /* line 173, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-left: 70px;
+    height: 485px;
+  }
+  /* line 182, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-text {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+  /* line 190, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-vectors {
+    display: flex;
+    width: 467px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 198, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second {
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: unset;
+  }
+  /* line 205, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-right: 65px;
+    height: 34vh;
+  }
+  /* line 214, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-text {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+  /* line 222, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-vectors {
+    display: flex;
+    width: 467px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 229, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-img {
+    width: 540px;
+    height: 540px;
+    background: url(/img/third2.jpg) center no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 239, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block {
+    width: 700px;
+  }
+  /* line 243, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-img {
+    margin: auto;
+  }
+  /* line 247, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-box {
+    height: 34vh;
+  }
+  /* line 253, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-box {
+    margin: auto;
+    height: 34vh;
+  }
+  /* line 258, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-img {
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 266, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block {
+    width: 100%;
+  }
+  /* line 269, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__lines {
+    width: 100%;
+  }
+  /* line 274, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-img {
+    width: 540px;
+    height: 540px;
+  }
+  /* line 279, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-box {
+    margin-top: 2em;
+    margin-left: unset;
+    width: 100%;
+    height: unset;
+  }
+  /* line 286, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__first-vectors {
+    margin-top: 2em;
+    width: 100%;
+  }
+  /* line 292, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second {
+    margin-top: 4em;
+  }
+  /* line 295, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-box {
+    width: 100%;
+    height: unset;
+  }
+  /* line 300, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-vectors {
+    margin-top: 2em;
+    width: 100%;
+  }
+  /* line 305, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_fifth.scss */
+  .fifth-block__second-img {
+    margin-top: 2em;
+    width: 540px;
+    height: 540px;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block {
+  margin: 140px auto auto;
+  width: 100%;
+  height: 1022px;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 35, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__cards {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__cards-item {
+  width: 357px;
+}
+
+/* line 55, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__cards-item__text {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 63, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__cards-item__text > span {
+  color: #000000;
+}
+
+/* line 70, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+.sixth-block__cards-img > img {
+  background: center no-repeat;
+}
+
+@media (min-width: 1440px) {
+  /* line 81, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards-item {
+    width: 357px;
+    height: 654px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 90, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block {
+    margin: 140px auto auto;
+    width: 100%;
+    height: 1022px;
+  }
+  /* line 95, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 111, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 117, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 124, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 134, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  /* line 142, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards-item {
+    width: 290px;
+  }
+  /* line 145, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards-item__text {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 153, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards-item__text > span {
+    color: #000000;
+  }
+  /* line 160, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards-img > img {
+    background: center no-repeat;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 170, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block {
+    width: 700px;
+  }
+  /* line 174, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards-item {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 182, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block {
+    width: 100%;
+    height: unset;
+  }
+  /* line 186, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__title {
+    font-size: 40px;
+  }
+  /* line 190, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__lines {
+    width: 100%;
+  }
+  /* line 194, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_sixth.scss */
+  .sixth-block__cards {
+    flex-direction: column;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block {
+  margin: 140px auto auto;
+  width: 100%;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 27, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 44, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant {
+  margin-top: 74px;
+  display: flex;
+  width: 100%;
+  height: 455px;
+  background: rgba(191, 219, 247, 0.2);
+}
+
+/* line 51, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  width: 513px;
+  text-align: center;
+}
+
+/* line 59, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-text > h2 {
+  width: 100%;
+  font-family: "Alice";
+  font-size: 38px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-text > button {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 184.62px;
+  height: 36.29px;
+  background: #5A8CC1;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 80, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-text > button > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86.1px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Alice";
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-text > p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 100, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-text > p:last-child {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 111, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img {
+  position: relative;
+  width: 540px;
+  height: 100%;
+}
+
+/* line 116, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img > div {
+  width: 100%;
+}
+
+/* line 120, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 126, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 135, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 141, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 150, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img-btn.prev {
+  left: 0;
+}
+
+/* line 153, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__restourant-img-btn.next {
+  right: 0;
+}
+
+/* line 160, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace {
+  margin-top: 74px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 166, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 513px;
+  text-align: center;
+}
+
+/* line 173, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-text > h2 {
+  width: 100%;
+  font-family: "Alice";
+  font-size: 38px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 183, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-text > button {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 184.62px;
+  height: 36.29px;
+  background: #5A8CC1;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 194, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-text > button > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86.1px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Alice";
+}
+
+/* line 205, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-text > p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 214, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-text > p:last-child {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 225, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img {
+  position: relative;
+  width: 540px;
+  height: 100%;
+}
+
+/* line 230, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img > div {
+  width: 100%;
+}
+
+/* line 234, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 240, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 249, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* line 254, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  margin-top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 263, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img-btn.prev {
+  left: 0;
+}
+
+/* line 266, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+.seventh-block__terrace-img-btn.next {
+  right: 0;
+}
+
+@media (min-width: 320px) {
+  /* line 275, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block {
+    width: 100%;
+  }
+  /* line 278, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__title {
+    font-size: 40px;
+  }
+  /* line 282, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__lines {
+    width: 100%;
+  }
+  /* line 286, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant {
+    flex-direction: column;
+    height: unset;
+  }
+  /* line 290, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img {
+    width: 100%;
+  }
+  /* line 293, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-item {
+    width: 100%;
+  }
+  /* line 297, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-btn {
+    margin-top: 45%;
+  }
+  /* line 302, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 20em;
+  }
+}
+
+@media (min-width: 320px) and (min-width: 400px) {
+  /* line 309, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text {
+    margin-top: 23em;
+  }
+}
+
+@media (min-width: 320px) and (min-width: 460px) {
+  /* line 315, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text {
+    margin-top: 26em;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 321, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace {
+    flex-direction: column;
+    height: 113vh;
+  }
+  /* line 325, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text {
+    width: 100%;
+  }
+  /* line 329, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img {
+    width: 100%;
+  }
+  /* line 332, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 342, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block {
+    width: 100%;
+  }
+  /* line 345, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant {
+    height: unset;
+  }
+  /* line 348, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text {
+    margin-top: 42em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 356, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block {
+    margin: 140px auto auto;
+    width: 100%;
+  }
+  /* line 360, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 369, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 376, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 382, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 389, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 399, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 455px;
+    background: rgba(191, 219, 247, 0.2);
+  }
+  /* line 407, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+    margin-left: 40px;
+    width: 513px;
+    text-align: center;
+  }
+  /* line 416, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text > h2 {
+    width: 100%;
+    font-family: "Alice";
+    font-size: 38px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 426, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text > button {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184.62px;
+    height: 36.29px;
+    background: #5A8CC1;
+    border: none;
+    cursor: pointer;
+  }
+  /* line 437, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text > button > span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86.1px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Alice";
+  }
+  /* line 448, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text > p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 457, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-text > p:last-child {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 468, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img {
+    position: relative;
+    width: 540px;
+    height: 100%;
+  }
+  /* line 473, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img > div {
+    width: 100%;
+  }
+  /* line 477, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* line 483, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 492, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  /* line 498, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    top: 0%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 507, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-btn.prev {
+    left: 0;
+  }
+  /* line 510, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__restourant-img-btn.next {
+    right: 0;
+  }
+  /* line 517, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace {
+    margin-top: 74px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: unset;
+  }
+  /* line 525, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 530px;
+    text-align: center;
+  }
+  /* line 532, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text > h2 {
+    width: 100%;
+    font-family: "Alice";
+    font-size: 38px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 542, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text > button {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184.62px;
+    height: 36.29px;
+    background: #5A8CC1;
+    border: none;
+    cursor: pointer;
+  }
+  /* line 553, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text > button > span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86.1px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Alice";
+  }
+  /* line 564, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text > p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 573, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-text > p:last-child {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 584, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img {
+    position: relative;
+    width: 540px;
+    height: 100%;
+  }
+  /* line 589, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img > div {
+    width: 100%;
+  }
+  /* line 593, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* line 599, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 608, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+  }
+  /* line 613, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    margin-top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 622, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-btn.prev {
+    left: 0;
+  }
+  /* line 625, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_seventh.scss */
+  .seventh-block__terrace-img-btn.next {
+    right: 0;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block {
+  margin: 195px auto auto;
+}
+
+/* line 4, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__first {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 39, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__first-text {
+  width: 504px;
+  text-align: center;
+}
+
+/* line 43, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__first-text__paragraph {
+  margin-top: 100px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 53, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__first-text__vectors {
+  margin: 62px auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 467.73px;
+}
+
+/* line 63, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__second {
+  margin-top: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__second-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 504px;
+  text-align: center;
+}
+
+/* line 76, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__second-text__paragraph {
+  margin-top: 100px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 86, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__second-text > svg {
+  margin: 73px auto auto;
+}
+
+/* line 90, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+.song-block__second-text__vectors {
+  margin: 59px auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 467.73px;
+}
+
+@media (min-width: 320px) {
+  /* line 102, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block {
+    margin: 25em auto auto auto;
+    width: 100%;
+  }
+  /* line 106, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__title {
+    font-size: 34px;
+  }
+  /* line 110, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__lines {
+    width: 100%;
+  }
+  /* line 114, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first {
+    flex-direction: column;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first-img > img {
+    width: 100%;
+  }
+  /* line 123, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first-text {
+    width: 100%;
+  }
+  /* line 126, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first-text__vectors {
+    width: 100%;
+  }
+  /* line 132, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  /* line 136, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-text {
+    width: 100%;
+  }
+  /* line 139, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-text__vectors {
+    width: 100%;
+  }
+  /* line 144, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-img {
+    margin-top: 5vh;
+  }
+  /* line 147, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-img > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 156, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 163, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block {
+    margin: 195px auto auto;
+    width: 1024px;
+  }
+  /* line 167, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 176, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 183, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 189, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 196, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  /* line 203, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first-text {
+    width: 504px;
+    text-align: center;
+  }
+  /* line 207, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first-text__paragraph {
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 217, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first-text__vectors {
+    margin: 62px auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 467.73px;
+  }
+  /* line 227, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second {
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  /* line 234, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 504px;
+    text-align: center;
+  }
+  /* line 241, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-text__paragraph {
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 251, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-text > svg {
+    margin: 73px auto auto;
+  }
+  /* line 255, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second-text__vectors {
+    margin: 59px auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 467.73px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 269, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__first {
+    width: 1110px;
+  }
+  /* line 272, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_song.scss */
+  .song-block__second {
+    width: 1110px;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block {
+  margin: 140px auto auto;
+}
+
+/* line 4, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide {
+  position: relative;
+  display: none;
+  width: 1260px;
+  margin-top: 40px;
+  margin-right: 0;
+  background: rgba(191, 219, 247, 0.2);
+}
+
+/* line 43, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__img {
+  width: 100%;
+  height: 538px;
+}
+
+/* line 48, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__items {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  inset: 0;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+/* line 57, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__items > img {
+  display: block;
+  width: 538px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 64, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__items-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 157px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* line 72, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__items-text > p {
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__items[data-active] {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* line 89, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 98, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__btn.prev {
+  left: 0;
+}
+
+/* line 101, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide__btn.next {
+  right: 6em;
+}
+
+/* line 107, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block-slide:target {
+  display: flex;
+}
+
+/* line 111, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1110px;
+}
+
+/* line 118, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* line 123, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-items__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #5A8CC1;
+  width: 100%;
+  height: 52px;
+  transition: 0.7s;
+}
+
+/* line 139, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-items__item--active {
+  border: 1px solid #5A8CC1;
+  border-bottom: none;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+
+/* line 151, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-body__block {
+  display: none;
+  margin-top: 80px;
+  right: 0;
+  width: 1260px;
+  height: 538px;
+  background: rgba(191, 219, 247, 0.2);
+}
+
+/* line 160, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-body__block--active {
+  display: flex;
+  transition: 0.7s;
+}
+
+/* line 170, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-body__text {
+  margin: auto;
+}
+
+/* line 173, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-body__text > p {
+  font-family: "Alice";
+  margin-left: 30px;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 539px;
+}
+
+/* line 185, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+.tab-block__tabs-body__text > a {
+  display: block;
+  margin-top: 10px;
+  font-family: "Alice";
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 320px) {
+  /* line 204, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block {
+    width: 100%;
+  }
+  /* line 207, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__lines {
+    width: 100%;
+  }
+  /* line 211, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs {
+    width: 100%;
+  }
+  /* line 214, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items {
+    flex-wrap: wrap;
+  }
+  /* line 219, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide {
+    width: 100%;
+  }
+  /* line 222, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn {
+    top: 34%;
+  }
+  /* line 224, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn.next {
+    right: 0;
+  }
+  /* line 229, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items {
+    flex-direction: column;
+  }
+  /* line 232, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items > img {
+    width: 100%;
+  }
+  /* line 236, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items-text {
+    height: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 245, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block {
+    width: 700px;
+  }
+  /* line 249, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items {
+    flex-wrap: unset;
+  }
+  /* line 252, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items__item {
+    font-size: 16px;
+  }
+  /* line 259, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn {
+    top: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 267, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block {
+    margin: 140px auto auto;
+  }
+  /* line 270, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 279, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 286, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 292, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 299, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 0;
+    background: rgba(191, 219, 247, 0.2);
+  }
+  /* line 309, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__img {
+    width: 100%;
+    height: 538px;
+  }
+  /* line 314, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    inset: 0;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  /* line 324, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items > img {
+    display: block;
+    width: 538px;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 331, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 157px;
+    justify-content: space-between;
+    margin: auto;
+  }
+  /* line 339, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items-text > p {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 351, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__items[data-active] {
+    opacity: 1;
+    z-index: 1;
+  }
+  /* line 356, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 365, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn.prev {
+    left: 0;
+  }
+  /* line 368, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn.next {
+    right: 19em;
+  }
+  /* line 374, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide:target {
+    display: flex;
+  }
+  /* line 378, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+  }
+  /* line 385, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* line 390, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #5A8CC1;
+    width: 100%;
+    height: 52px;
+    transition: 0.7s;
+  }
+  /* line 406, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items__item--active {
+    border: 1px solid #5A8CC1;
+    border-bottom: none;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+  /* line 418, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-body__block {
+    display: none;
+    margin-top: 80px;
+    right: 0;
+    width: 1260px;
+    height: 538px;
+    background: rgba(191, 219, 247, 0.2);
+  }
+  /* line 427, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-body__block--active {
+    display: flex;
+    transition: 0.7s;
+  }
+  /* line 432, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-body__text {
+    margin: auto;
+  }
+  /* line 435, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-body__text > p {
+    font-family: "Alice";
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    width: 539px;
+  }
+  /* line 447, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-body__text > a {
+    display: block;
+    margin-top: 10px;
+    font-family: "Alice";
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 467, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block {
+    width: 100%;
+  }
+  /* line 470, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs {
+    width: 100%;
+  }
+  /* line 474, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block__tabs-items__item {
+    font-size: 24px;
+  }
+  /* line 480, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide:target {
+    width: 1258px;
+  }
+  /* line 486, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_tab.scss */
+  .tab-block-slide__btn.next {
+    right: 9em;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel {
+  margin: 130px auto auto;
+  width: 100%;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-title {
+  font-family: "Alice";
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  width: 412px;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-lines > hr:first-child {
+  width: 100%;
+  height: 0;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 27, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-lines > hr {
+  margin-top: 10px;
+  width: 220px;
+  border: 1px solid #5A8CC1;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-bg {
+  margin-top: 30px;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-bg > img {
+  width: 100%;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-btn {
+  display: block;
+  margin: -4px auto auto;
+  width: 287px;
+  height: 36px;
+  background: #5A8CC1;
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+
+/* line 56, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block {
+  margin-top: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 62, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img {
+  position: relative;
+  width: 540px;
+  height: 455px;
+}
+
+/* line 67, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img > div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 73, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+/* line 79, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 88, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img-item[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+/* line 94, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  margin-top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 103, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img-btn.prev {
+  left: 0;
+}
+
+/* line 106, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__img-btn.next {
+  right: 0;
+}
+
+/* line 112, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-block__text {
+  text-align: center;
+  margin-top: 100px;
+  width: 530px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 126, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-gift {
+  margin: 140px auto auto;
+  width: 100%;
+  border-top: 2px solid #5A8CC1;
+}
+
+/* line 131, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-gift__text {
+  font-family: "Alice";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 140, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-gift__text > b {
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+
+/* line 151, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+.hotel-gift__vectors {
+  margin: 20.43px auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 467.73px;
+}
+
+@media (min-width: 320px) {
+  /* line 162, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel {
+    margin: 25vh auto auto auto;
+  }
+  /* line 165, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-title {
+    font-size: 25px;
+  }
+  /* line 169, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-lines {
+    width: 100%;
+  }
+  /* line 174, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-bg > img {
+    width: 100%;
+  }
+  /* line 179, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block {
+    flex-direction: column;
+  }
+  /* line 182, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img {
+    width: 100%;
+    height: 330px;
+  }
+  /* line 186, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-item {
+    width: 100%;
+  }
+  /* line 190, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img > div {
+    width: 340vh;
+  }
+  /* line 195, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__text {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* line 202, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-gift__vectors {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 210, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel {
+    margin: 60vh auto auto;
+  }
+  /* line 215, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-item {
+    width: 100%;
+    height: unset;
+  }
+  /* line 221, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__text {
+    margin-top: 50vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 229, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel {
+    margin: 130px auto auto;
+    width: 100%;
+  }
+  /* line 233, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-title {
+    font-family: "Alice";
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 242, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    width: 412px;
+  }
+  /* line 249, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-lines > hr:first-child {
+    width: 100%;
+    height: 0;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 255, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-lines > hr {
+    margin-top: 10px;
+    width: 220px;
+    border: 1px solid #5A8CC1;
+  }
+  /* line 262, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-bg {
+    margin-top: 30px;
+  }
+  /* line 266, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-btn {
+    display: block;
+    margin: -4px auto auto;
+    width: 287px;
+    height: 36px;
+    background: #5A8CC1;
+    border: none;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+  }
+  /* line 281, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block {
+    margin-top: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  /* line 288, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img {
+    position: relative;
+    width: 540px;
+    height: 455px;
+  }
+  /* line 293, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img > div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 299, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.9s;
+    width: 55vh;
+  }
+  /* line 306, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* line 315, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-item[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  /* line 321, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    margin-top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* line 330, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-btn.prev {
+    left: 0;
+  }
+  /* line 333, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-btn.next {
+    right: 0;
+  }
+  /* line 339, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__text {
+    text-align: center;
+    margin-top: 100px;
+    width: 530px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 353, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-gift {
+    margin: 140px auto auto;
+    width: 100%;
+    border-top: 2px solid #5A8CC1;
+  }
+  /* line 358, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-gift__text {
+    font-family: "Alice";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: justify;
+    letter-spacing: 0.07em;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  /* line 367, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-gift__text > b {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: justify;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+  /* line 378, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-gift__vectors {
+    margin: 20.43px auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 467.73px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 393, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_hotel.scss */
+  .hotel-block__img-item {
+    width: 540px;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+.wedding {
+  margin: 140px auto auto;
+  width: 100%;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+.wedding-title {
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+.wedding-img {
+  margin: 40px auto auto;
+  width: 100%;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+.wedding-img > img {
+  width: 100%;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+.wedding-line {
+  width: 100%;
+  margin: 20px auto auto;
+  color: #5A8CC1;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+.wedding-text {
+  display: block;
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 320px) {
+  /* line 43, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+  .wedding {
+    width: 100%;
+  }
+  /* line 46, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+  .wedding-img {
+    width: 100%;
+  }
+  /* line 48, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+  .wedding-img > img {
+    width: 100%;
+  }
+  /* line 53, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+  .wedding-line {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 61, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+  .wedding-img {
+    width: 730px;
+  }
+  /* line 65, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_wedding.scss */
+  .wedding-line {
+    width: 658px;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team {
+  margin: 140px auto auto auto;
+  width: 1276px;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-title {
+  width: 1110px;
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 16, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block {
+  position: relative;
+  display: flex;
+  width: 1260px;
+  margin-top: 40px;
+  margin-right: 0;
+  background: rgba(191, 219, 247, 0.2);
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__img {
+  width: 100%;
+  height: 538px;
+}
+
+/* line 29, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__items {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  inset: 0;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__items > img {
+  display: block;
+  width: 538px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__items-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 157px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* line 53, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__items-text > p {
+  font-family: "Alice";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 65, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__items[data-active] {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* line 70, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* line 79, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__btn.prev {
+  left: 0;
+}
+
+/* line 82, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+.team-block__btn.next {
+  right: 6em;
+}
+
+@media (min-width: 320px) {
+  /* line 90, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team {
+    width: 100%;
+  }
+  /* line 93, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-title {
+    width: 100%;
+  }
+  /* line 97, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block {
+    width: 100%;
+  }
+  /* line 101, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__btn.next {
+    right: 0;
+  }
+  /* line 106, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items {
+    flex-direction: column;
+  }
+  /* line 109, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 119, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block {
+    height: 350px;
+  }
+  /* line 122, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items {
+    flex-direction: row;
+  }
+  /* line 125, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items > img {
+    width: 50%;
+  }
+  /* line 129, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items-text {
+    height: unset;
+  }
+  /* line 131, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items-text > p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 141, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team {
+    margin: 140px auto auto auto;
+  }
+  /* line 144, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block {
+    width: 1258px;
+  }
+  /* line 148, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__btn.next {
+    right: 6em;
+  }
+  /* line 154, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items-text {
+    height: 157px;
+  }
+  /* line 157, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_team.scss */
+  .team-block__items-text > p {
+    font-size: 38px;
+  }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer {
+  width: 100%;
+  height: 477px;
+  margin: 140px auto auto auto;
+  background: rgba(191, 219, 247, 0.2);
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block {
+  display: flex;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__map {
+  margin-top: 25.52px;
+  margin-left: 166px;
+  width: 718px;
+  height: 427px;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__map > div > iframe {
+  border: none;
+}
+
+/* line 23, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info {
+  margin-top: 25.52px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 42px;
+  width: 349px;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts__adress {
+  display: flex;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts__adress > span {
+  margin-left: 14px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  color: #2A2929;
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts__tel {
+  margin-top: 46.52px;
+  display: flex;
+}
+
+/* line 50, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts__tel > a {
+  display: block;
+  margin-left: 14px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  color: #2A2929;
+}
+
+/* line 61, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts__mail {
+  margin-top: 25px;
+  display: flex;
+}
+
+/* line 65, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-contacts__mail > span {
+  margin-left: 14px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  color: #2A2929;
+}
+
+/* line 76, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-social {
+  margin-top: 109px;
+  margin-left: 28px;
+}
+
+/* line 80, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-social > span {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.07em;
+  color: #2A2929;
+}
+
+/* line 89, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+.footer-block__info-social__items {
+  margin-top: 33px;
+  display: flex;
+  width: 171px;
+  justify-content: space-between;
+}
+
+@media (min-width: 320px) {
+  /* line 101, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer {
+    height: unset;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block {
+    flex-direction: column;
+  }
+  /* line 107, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block__map {
+    margin-left: 10px;
+    width: 95%;
+  }
+  /* line 112, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block__map > div > iframe {
+    width: 100%;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block__info {
+    margin-left: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 127, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer {
+    height: 477px;
+  }
+  /* line 130, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block {
+    flex-direction: row;
+  }
+  /* line 133, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block__map {
+    margin-top: 25.52px;
+    margin-left: 166px;
+    width: 718px;
+    height: 427px;
+  }
+  /* line 140, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/blocks/_footer.scss */
+  .footer-block-info {
+    margin-top: 25.52px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 42px;
+    width: 349px;
+  }
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 200;
+  color: #333333;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+body {
+  max-width: 100%;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* line 39, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+a {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  /* line 46, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 55, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 62, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+  .container {
+    padding-left: 166px;
+    padding-right: 166px;
+  }
+}
+
+@media (min-width: 1920px) {
+  /* line 69, ../../../../../../../../../../../../../Users/family/Desktop/la-grace2-master/src/scss/style.scss */
+  .container {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
