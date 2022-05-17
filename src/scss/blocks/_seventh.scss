@@ -322,11 +322,46 @@
                     margin-top: 30em;
                 }
             }
+
+            @media (min-width: 589px) {
+                &-text {
+                    margin-top: 37em;
+                }
+            }
+
+            @media (min-width: 726px) {
+                &-text {
+                    margin-top: 39em;
+                }
+            }
+
+            @media (min-width: 768px) {
+                &-text {
+                    margin-top: 42em;
+                }
+            }
+
+            @media (min-width: 822px) {
+                &-text {
+                    margin-top: 45em;
+                }
+            }
+
+            @media (min-width: 883px) {
+                &-text {
+                    margin-top: 48em;
+                }
+            }
+
+            @media (min-width: 937px) {
+                &-text {
+                    margin-top: 51em;
+                }
+            }
         }
 
         &__terrace {
             flex-direction: column;
-            height: 113vh;
 
             &-text {
                 width: 100%;
@@ -350,10 +385,6 @@
 
         &__restourant {
             height: unset;
-
-            &-text {
-                margin-top: 42em;
-            }
         }
 
         &__terrace {

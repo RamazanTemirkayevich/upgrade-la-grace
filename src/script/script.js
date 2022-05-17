@@ -1,50 +1,47 @@
 window.addEventListener('DOMContentLoaded', () => {
     // first tab
 
-    let tab = function (e) {
-        let tabNav = document.querySelectorAll('.tab-block__tabs-items__item'),
-            tabContent = document.querySelectorAll('.tab-block-slide'),
-            tabName;
-    
-        tabNav.forEach(item => {
-            item.addEventListener('click', selectTabNav)
+    document.querySelectorAll('.fourth-block__tabs-items__item').forEach((item) => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = e.target.getAttribute('href').replace('#', '');
+
+            document.querySelectorAll('.fourth-block__tabs-items__item').forEach(
+                (child) => child.classList.remove('active')
+            );
+            document.querySelectorAll('.fourth-block__tabs-body__block').forEach(
+                (child) => child.classList.remove('active')
+            );
+
+            item.classList.add('active');
+            document.getElementById(id).classList.add('active')
         });
-    
-        function selectTabNav() {
-            tabNav.forEach(item => {
-                item.classList.remove('tab-block__tabs-items__item--active');
-            });
-            this.classList.add('tab-block__tabs-items__item--active');
-            tabName = this.getAttribute('data-tab-name');
-            selectTabContent(tabName);
-        }
-    
-        function selectTabContent(tabName) {
-            tabContent.forEach(item => {
-
-                item.classList.contains(tabName) ? item.classList.add('active') : item.classList.remove('active');
-            })
-        }
-    
-    };
-    
-    
-    tab();
-
-    // second Tab 
-
-    let tabSecond = document.querySelectorAll('.fourth-block__tabs-items__item');
-    
-    tabSecond.forEach(item => {
-        item.addEventListener('click', selectTabNav);
     });
 
-    function selectTabNav() {
-        tabSecond.forEach(item => {
-            item.classList.remove('active');
+    document.querySelector('.fourth-block__tabs-items__item').click();
+
+    // second tab
+
+    document.querySelectorAll('.tab-block__tabs-items__item').forEach((item) => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const idsecond = e.target.getAttribute('href').replace('#', '');
+
+            document.querySelectorAll('.tab-block__tabs-items__item').forEach(
+                (child) => child.classList.remove('active')
+            );
+            document.querySelectorAll('.tab-block-slide').forEach(
+                (child) => child.classList.remove('active')
+            );
+
+            item.classList.add('active');
+            document.getElementById(idsecond).classList.add('active')
         });
-        this.classList.toggle('active');
-    };
+    });
+
+    document.querySelector('.tab-block__tabs-items__item').click();
+
+    // test slider
 
     //slide 
 
@@ -52,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            const offset = button.dataset.carouselButton === "next" ? 1 : -1
+            const offset = button.dataset.carouselButton === "next" ? 1 : +1
             const slides = button
             .closest("[data-carousel]")
             .querySelector("[data-slides]")
@@ -61,9 +58,12 @@ window.addEventListener('DOMContentLoaded', () => {
             let newIndex = [...slides.children].indexOf(activeSlide) + offset
             if (newIndex < 0) newIndex = slides.children.length - 1
             if (newIndex >= slides.children.length) newIndex = 0
+            if (slides <= offset) button.classList.add('hide') 
 
             slides.children[newIndex].dataset.active = true
             delete activeSlide.dataset.active
         });
     });
+
+    
 })

@@ -100,7 +100,7 @@
 
 @media (min-width: 320px) {
     .song-block {
-        margin: 39em auto auto auto;
+        margin: 22em auto auto auto;
         width: 100%;
 
         &__title {
@@ -152,9 +152,51 @@
     }
 }
 
+@media (min-width: 400px) {
+    .song-block {
+        margin: 25em auto auto auto;
+    }
+}
+
+@media (min-width: 455px) {
+    .song-block {
+        margin: 27em auto auto auto;
+    }
+}
+
+@media (min-width: 501px) {
+    .song-block {
+        margin: 30em auto auto auto;
+    }
+}
+
 @media (min-width: 524px) {
     .song-block {
-        margin: 37em auto auto auto;
+        margin: 32em auto auto auto;
+    }
+}
+
+@media (min-width: 590px) {
+    .song-block {
+        margin: 34em auto auto auto;
+    }
+}
+
+@media (min-width: 644px) {
+    .song-block {
+        margin: 36em auto auto auto;
+    }
+}
+
+@media (min-width: 650px) {
+    .song-block {
+        margin: 39em auto auto auto;
+    }
+}
+
+@media (min-width: 725px) {
+    .song-block {
+        margin: 42em auto auto auto;
     }
 }
 
@@ -162,6 +204,12 @@
     .song-block {
         margin: 50em auto auto auto;
         width: 700px;
+    }
+}
+
+@media (min-width: 920px) {
+    .song-block {
+        margin: 55em auto auto auto;
     }
 }
 

@@ -9,10 +9,11 @@
 
         &__img {
             width: 100%;
-            
+            overflow: hidden;
 
             &-track {
                 width: 100%;
+                display: flex;
 
                 &__item {
                     width: 100%;
@@ -59,10 +60,24 @@
                 transform: translateY(-50%);
                 cursor: pointer;
 
-                &.prev {
+                &-prev {
+                    position: absolute;
+                    z-index: 2;
+                    background: none;
+                    border: none;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
                     left: 10px;
                 }
-                &.next {
+                &-next {
+                    position: absolute;
+                    z-index: 2;
+                    background: none;
+                    border: none;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
                     right: 10px;
                 }
             }
