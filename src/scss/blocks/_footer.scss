@@ -100,6 +100,7 @@
 @media (min-width: 320px) {
     .footer {
         height: unset;
+        width: 100%;
 
         &-block {
             flex-direction: column;
@@ -126,6 +127,7 @@
 @media (min-width: 1440px) {
     .footer {
         height: 477px;
+        width: 100%;
         
         &-block {
             flex-direction: row;

@@ -88,6 +88,7 @@
 
 @media (min-width: 320px) {
     .first-block {
+        width: 100%;
         &__list {
             flex-direction: column;
             width: 67%;
@@ -131,6 +132,7 @@
 
 @media (min-width: 768px) {
     .first-block {
+        width: 100%;
         &__list {
             flex-wrap: wrap-reverse;
             width: 80%;

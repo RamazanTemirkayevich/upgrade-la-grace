@@ -100,7 +100,7 @@
 
 @media (min-width: 320px) {
     .song-block {
-        margin: 22em auto auto auto;
+        margin: 7em auto auto auto;
         width: 100%;
 
         &__title {
@@ -152,68 +152,6 @@
     }
 }
 
-@media (min-width: 400px) {
-    .song-block {
-        margin: 25em auto auto auto;
-    }
-}
-
-@media (min-width: 455px) {
-    .song-block {
-        margin: 27em auto auto auto;
-    }
-}
-
-@media (min-width: 501px) {
-    .song-block {
-        margin: 30em auto auto auto;
-    }
-}
-
-@media (min-width: 524px) {
-    .song-block {
-        margin: 32em auto auto auto;
-    }
-}
-
-@media (min-width: 590px) {
-    .song-block {
-        margin: 34em auto auto auto;
-    }
-}
-
-@media (min-width: 644px) {
-    .song-block {
-        margin: 36em auto auto auto;
-    }
-}
-
-@media (min-width: 650px) {
-    .song-block {
-        margin: 39em auto auto auto;
-    }
-}
-
-@media (min-width: 725px) {
-    .song-block {
-        margin: 42em auto auto auto;
-    }
-}
-
-@media (min-width: 768px) {
-    .song-block {
-        margin: 50em auto auto auto;
-        width: 700px;
-    }
-}
-
-@media (min-width: 920px) {
-    .song-block {
-        margin: 55em auto auto auto;
-    }
-}
-
-
 @media (min-width: 1024px) {
     .song-block {
         margin: 195px auto auto;
@@ -256,11 +194,14 @@
             flex-direction: row;
     
             &-text {
-                width: 504px;
+                width: 350px;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
     
                 &__paragraph {
-                    margin-top: 100px;
+                    margin-top: 2em;
                     font-size: 16px;
                     line-height: 150%;
                     text-align: center;
@@ -270,11 +211,11 @@
                 }
     
                 &__vectors {
-                    margin: 7em auto auto;
+                    margin: 2em auto;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    width: 467.73px;
+                    width: 290px;
                 }
             }
         }
@@ -290,11 +231,11 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                width: 504px;
+                width: 300px;
                 text-align: center;
     
                 &__paragraph {
-                    margin-top: 100px;
+                    margin-top: 2em;
                     font-size: 16px;
                     line-height: 150%;
                     text-align: center;
@@ -308,11 +249,11 @@
                 }
     
                 &__vectors {
-                    margin: 59px auto auto;
+                    margin: 2em auto;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    width: 467.73px;
+                    width: 290px;
                 }
             }
         }
@@ -323,9 +264,23 @@
     .song-block {
         &__first {
             width: 1110px;
+
+            &-text {
+                width: 504px;
+                &__vectors {
+                    width: 100%;
+                }
+            }
         }
         &__second {
             width: 1110px;
+
+            &-text {
+                width: 504px;
+                &__vectors {
+                    width: 100%;
+                }
+            }
         }
     }
 }

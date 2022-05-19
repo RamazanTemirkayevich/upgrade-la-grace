@@ -5,36 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>La Grace</title>
 </head>
 <body>
     <header class="header">
         <div class="header-main">
-            <div class="header-main__img" data-carousel>
-                <button class="header-main__img-btn prev" data-carousel-button>
-                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                    </svg>
-                </button>
-                <button class="header-main__img-btn next" data-carousel-button>
-                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                    </svg>
-                </button>
-                <div class="header-main__img-track" data-slides>
-                    <div class="header-main__img-track__item" data-active>
+            <div class="header-main__img swiper">
+                <div class="header-main__img-track swiper-wrapper">
+                    <div class="header-main__img-track__item swiper-slide">
                         <img src="/img/promo.jpg" alt="">
                     </div>
-                    <div class="header-main__img-track__item">
-                        <img src="/img/promoSlide2.jpg" alt="">
+                    <div class="header-main__img-track__item swiper-slide">
+                        <img src="/img/promo-slide2.JPG" alt="">
                     </div>
-                    <div class="header-main__img-track__item">
-                        <img src="/img/promoSlide3.jpg" alt="">
+                    <div class="header-main__img-track__item swiper-slide">
+                        <img src="/img/promo-slide3.JPG" alt="">
                     </div>
                 </div>
+                <button class="header-main__img-btn--prev btns">
+                    <img src="/icons/prev.svg" alt="">
+                </button>
+                <button class="header-main__img-btn--next btns">
+                    <img src="/icons/next.svg" alt="">
+                </button>
             </div>
+
             <div class="container">
                 <div class="header-container">
                     <div class="header-container__name">
@@ -154,137 +150,123 @@
                     <a href="#tab-04" data-name-tab="tab-04" class="fourth-block__tabs-items__item">Выездная церемония</a>
                 </nav>
                 <div class="fourth-block__tabs-body">
-                    <div id="tab-01" class="fourth-block__tabs-body__block">
 
-                        <div class="fourth-block__tabs-body__img-one" data-carousel>
-                            <button class="fourth-block__tabs-body__img-one-btn prev" data-carousel-button="prev">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                                </svg>
-                            </button>
-                            <button class="fourth-block__tabs-body__img-one-btn next" data-carousel-button="next">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                                </svg>  
-                            </button>
-                            <div class="fourth-block__tabs-body__img-one__img" data-slides>
-                              <div class="fourth-block__tabs-body__img-one-item" data-active>
-                                <img src="/img/slides/slideFirst/dinner/slideFirst.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-one-item">
-                                <img src="/img/slides/slideFirst/dinner/slideSecond.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-one-item">
-                                <img src="/img/slides/slideFirst/dinner/slideThird.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-one-item">
-                                <img src="/img/slides/slideFirst/dinner/slideFourth.jpg" alt="">
-                              </div>
+                    <div id="tab-01" class="fourth-block__tabs-body__block">
+                        <div class="wrapper">
+                            <div class="wrapper-container swiper">
+                                <button class="wrapper-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-container-track swiper-wrapper">
+                                    <div class="wrapper-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/dinner/slideFirst.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/dinner/slideSecond.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/dinner/slideThird.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/dinner/slideFourth.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
                             <p>Формат уютного семейного праздника  на 10 - 15 гостей, отличный вариант для  небольшой свадьбы. Если Вы не любите шумные вечеринки, а большие компании для Вас утомительны - проведите самый главный день в кругу самых близких и родных за одним столом в тёплой и душевной атмосфере, где вы сможете расслабиться и быть собой. Ваш знаменательный день пройдёт в атмосфере уюта и близости, а рядом будут самые родные и любимые люди, которых вы сможете особенно окружить заботой. На небольшом семейном ужине лучше подготовить длинный стол для всех гостей и уделить внимание стильной  сервировке, а также элементам праздничного оформления. Декор камерной свадьбы призван создать теплую и душевную атмосферу, поэтому используйте в оформлении большое количество свечей, тактильно приятные ткани и натуральные материалы. Основным преимуществом небольшой семейной свадьбы, это абсолютная свобода действий, которая предоставляет паре возможность реализовать свои идеи в жизнь и при этом сохранить аинство своего узкого семейного круга.
                             </p>
                         </div>
-
                     </div>
+
                     <div id="tab-02" class="fourth-block__tabs-body__block">
-                        <div class="fourth-block__tabs-body__img-two" data-carousel>
-                            <button class="fourth-block__tabs-body__img-two-btn prev" data-carousel-button="prev">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                                </svg>
-                            </button>
-                            <button class="fourth-block__tabs-body__img-two-btn next" data-carousel-button="next">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                                </svg>  
-                            </button>
-                            <div class="fourth-block__tabs-body__img-two__img" data-slides>
-                              <div class="fourth-block__tabs-body__img-two-item" data-active>
-                                <img src="/img/slides/slideFirst/wedding/slideFirst.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-two-item">
-                                <img src="/img/slides/slideFirst/wedding/slideSecond.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-two-item">
-                                <img src="/img/slides/slideFirst/wedding/slideThird.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-two-item">
-                                <img src="/img/slides/slideFirst/wedding/slideFourth.jpg" alt="">
-                              </div>
+                        <div class="wrapper-02">
+                            <div class="wrapper-02-container swiper">
+                                <button class="wrapper-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-02-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-02-container-track swiper-wrapper">
+                                    <div class="wrapper-02-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/wedding/slideFirst.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-02-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/wedding/slideSecond.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-02-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/wedding/slideThird.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-02-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/wedding/slideFourth.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <p>Это праздник, который запомнится на всю жизнь не только вам, но и вашим гостям. В разы больше эмоций и поздравлений, гораздо больше улыбок и веселья, танцы до упада — все эти впечатления являются безоговорочными преимуществами масштабного торжества. Из большой свадьбы можно сделать настоящий праздник мечты: и церемония со всеми традициями, и банкет на умопомрачительной площадке, свадебное утро в волшебном месте, и первое совместное ДА на берегу Казантипского залива. 
+                            <p>
+                                Это праздник, который запомнится на всю жизнь не только вам, но и вашим гостям. В разы больше эмоций и поздравлений, гораздо больше улыбок и веселья, танцы до упада — все эти впечатления являются безоговорочными преимуществами масштабного торжества. Из большой свадьбы можно сделать настоящий праздник мечты: и церемония со всеми традициями, и банкет на умопомрачительной площадке, свадебное утро в волшебном месте, и первое совместное ДА на берегу Казантипского залива.
                             </p>
                         </div>
                         
                     </div>
                     <div id="tab-03" class="fourth-block__tabs-body__block">
-                        <div class="fourth-block__tabs-body__img-three" data-carousel>
-                            <button class="fourth-block__tabs-body__img-three-btn prev" data-carousel-button="prev">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                                </svg>
-                            </button>
-                            <button class="fourth-block__tabs-body__img-three-btn next" data-carousel-button="next">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                                </svg>  
-                            </button>
-                            <div class="fourth-block__tabs-body__img-three__img" data-slides>
-                              <div class="fourth-block__tabs-body__img-three-item" data-active>
-                                <img src="/img/slides/slideFirst/pair/slideFirst.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-three-item">
-                                <img src="/img/slides/slideFirst/pair/slideSecond.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-three-item">
-                                <img src="/img/slides/slideFirst/pair/slideThird.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-three-item">
-                                <img src="/img/slides/slideFirst/pair/slideFourth.jpg" alt="">
-                              </div>
+                        <div class="wrapper-03">
+                            <div class="wrapper-03-container swiper">
+                                <button class="wrapper-03-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-03-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-03-container-track swiper-wrapper">
+                                    <div class="wrapper-03-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/pair/slideFirst.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-03-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/pair/slideSecond.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-03-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/pair/slideThird.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-03-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/pair/slideFourth.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <p>Отличная возможность насладиться обществом друг друга, а также избавиться от неизбежных переживаний при многолюдных торжествах. Насладиться уютным ужином при свечах с невероятным видом на алый закат, произнести друг другу самые трогательные, искренние слова и загадать самое сокровенное желание. В La Grace  даже самый маленький праздник, будет романтичным и незабываемым.
-                            </p>
+                            <p>
+                                Отличная возможность насладиться обществом друг друга, а также избавиться от неизбежных переживаний при многолюдных торжествах. Насладиться уютным ужином при свечах с невероятным видом на алый закат, произнести друг другу самые трогательные, искренние слова и загадать самое сокровенное желание. В La Grace  даже самый маленький праздник, будет романтичным и незабываемым.                            </p>
                         </div>
                         
                     </div>
                     <div id="tab-04" class="fourth-block__tabs-body__block">
-                        <div class="fourth-block__tabs-body__img-four" data-carousel>
-                            <button class="fourth-block__tabs-body__img-four-btn prev" data-carousel-button="prev">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                                </svg>
-                            </button>
-                            <button class="fourth-block__tabs-body__img-four-btn next" data-carousel-button="next">
-                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                                </svg>  
-                            </button>
-                            <div class="fourth-block__tabs-body__img-four__img" data-slides>
-                              <div class="fourth-block__tabs-body__img-four-item" data-active>
-                                <img src="/img/slides/slideFirst/ceremony/slideFirst.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-four-item">
-                                <img src="/img/slides/slideFirst/ceremony/slideSecond.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-four-item">
-                                <img src="/img/slides/slideFirst/ceremony/slideThird.jpg" alt="">
-                              </div>
-                              <div class="fourth-block__tabs-body__img-four-item">
-                                <img src="/img/slides/slideFirst/ceremony/slideFourth.jpg" alt="">
-                              </div>
+                        <div class="wrapper-04">
+                            <div class="wrapper-04-container swiper">
+                                <button class="wrapper-04-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-04-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-04-container-track swiper-wrapper">
+                                    <div class="wrapper-04-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/ceremony/slideFirst.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-04-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/ceremony/slideSecond.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-04-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/ceremony/slideThird.jpg" alt="">
+                                    </div>
+                                    <div class="wrapper-04-container-track-item swiper-slide">
+                                        <img src="/img/slides/slideFirst/ceremony/slideFourth.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <p>Всё больше пар отказываются от торжественной росписи в ЗАГСе, отдавая преимущество сказочной выездной церемонии, в уникальном собственном стиле,  с великолепным видом на бесконечную бирюзовую гладь Казантипского залива. 
+                            <p>
+                                Всё больше пар отказываются от торжественной росписи в ЗАГСе, отдавая преимущество сказочной выездной церемонии, в уникальном собственном стиле,  с великолепным видом на бесконечную бирюзовую гладь Казантипского залива. 
                                 Здесь нет места спешке и конвейерному ощущению, этот день только для Вас двоих и он станет особенным, пропитанным любовью и искренними эмоциями. Нотки легкой тревоги бережно касаются ниточек Вашей души, глаза гостей сияют от восторга, а уста не перестают выражать слова поздравлений!
-                                Мы знаем, как правильно спланировать тайминг  церемонии и поможем продумать фуршет с оригинальными закусками и напитками, что  не позволит скучать Вашим гостям во время Вашей свадебной фотосьёмки.                            
+                                Мы знаем, как правильно спланировать тайминг  церемонии и поможем продумать фуршет с оригинальными закусками и напитками, что  не позволит скучать Вашим гостям во время Вашей свадебной фотосьёмки.
                             </p>
                         </div>
                         
@@ -403,26 +385,18 @@
             </div>
 
             <div class="seventh-block__restourant">
-                <div class="seventh-block__restourant-img" data-carousel>
-                    <div data-slides>
-                        <img class="seventh-block__restourant-img-item" src="/img/fourth1.jpg" alt="restourant" data-active>
-                        <img class="seventh-block__restourant-img-item" src="/img/fourth2.jpg" alt="restourant">
-                        <img class="seventh-block__restourant-img-item" src="/img/fourth1.jpg" alt="restourant">
+                <div class="seventh-block__restourant-img swiper">
+                    <div class="sevent-block__restourant-img__track swiper-wrapper">
+                        <img class="swiper-slide" src="/img/fourth1.jpg" alt="">
+                        <img class="swiper-slide" src="/img/fourth2.jpg" alt="">
+                        <img class="swiper-slide" src="/img/fourth1.jpg" alt="">
                     </div>
-
-                    <button class="seventh-block__restourant-img-btn prev" data-carousel-button="prev">
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                        </svg>
+                    <button class="seventh-block__restourant-img-prev">
+                        <img src="/icons/prev.svg" alt="">
                     </button>
-                    <button class="seventh-block__restourant-img-btn next" data-carousel-button="next">
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                        </svg>  
+                    <button class="seventh-block__restourant-img-next">
+                        <img src="/icons/next.svg" alt="">
                     </button>
-                    
                 </div>
 
                 <div class="seventh-block__restourant-text">
@@ -455,26 +429,18 @@
                     <p>Белоснежные, открытые террасы, сделанные из натурального дерева, имеют потрясающий панорамный вид на азовское побережье. Они идеально подойдут для проведения свадьбы в тёплое время года.  Вечером гости насладятся потрясающим крымским закатом, а вся развлекательная программа пройдёт на открытом свежем воздухе. Касательно восприятия погоды летом, можем заявить, что жарко не будет – ведь Азовское море славится своим освежающим бризом.</p>
                 </div>
 
-                <div class="seventh-block__terrace-img" data-carousel>
-                    <div data-slides>
-                        <img class="seventh-block__terrace-img-item" src="/img/fourth2.jpg" alt="restourant" data-active>
-                        <img class="seventh-block__terrace-img-item" src="/img/fourth1.jpg" alt="restourant">
-                        <img class="seventh-block__terrace-img-item" src="/img/fifth2.jpg" alt="restourant">
+                <div class="seventh-block__restourant-img swiper">
+                    <div class="sevent-block__restourant-img__track swiper-wrapper">
+                        <img class="swiper-slide" src="/img/fourth2.jpg" alt="">
+                        <img class="swiper-slide" src="/img/fourth1.jpg" alt="">
+                        <img class="swiper-slide" src="/img/fourth2.jpg" alt="">
                     </div>
-
-                    <button class="seventh-block__terrace-img-btn prev" data-carousel-button="prev">
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                        </svg>
+                    <button class="seventh-block__restourant-img-prev">
+                        <img src="/icons/prev.svg" alt="">
                     </button>
-                    <button class="seventh-block__terrace-img-btn next" data-carousel-button="next">
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                        </svg>  
+                    <button class="seventh-block__restourant-img-next">
+                        <img src="/icons/next.svg" alt="">
                     </button>
-                    
                 </div>
             </div>
         </section>
@@ -563,47 +529,41 @@
 
                 <div class="tab-block__tabs-body">
 
-                    <div id="tab-001" data-tab-name="tab-001" class="tab-block-slide active" data-carousel="">
+                    <div id="tab-001" data-tab-name="tab-001" class="tab-block-slide active">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -612,45 +572,39 @@
 
                     <div id="tab-002" data-tab-name="tab-002" class="tab-block-slide" data-carousel="">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -659,45 +613,39 @@
 
                     <div id="tab-003" class="tab-block-slide" data-carousel="">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -705,45 +653,39 @@
                     </div>
                     <div id="tab-004" class="tab-block-slide" data-carousel="">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -751,45 +693,39 @@
                     </div>
                     <div id="tab-005" class="tab-block-slide" data-carousel="">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -797,45 +733,39 @@
                     </div>
                     <div id="tab-006" class="tab-block-slide" data-carousel="">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -844,45 +774,39 @@
                     
                     <div id="tab-007" class="tab-block-slide" data-carousel="">
 
-                        <button class="tab-block-slide__btn prev" data-carousel-button="prev">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                            </svg>
-                        </button>
-                        <button class="tab-block-slide__btn next" data-carousel-button="next">
-                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                            </svg>  
-                        </button>
-
-                        <div class="tab-block-slide__img" data-block="active" data-slides="">
-
-                            <div class="tab-block-slide__items" data-active="">
-                                <img src="/img/slides/teamSlide/team1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>
-                                        Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
-                                    </p>
-                                    <p>Елена</p>
-                                    <p>+7 (978) ХХХ-ХХ-ХХ</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth1.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Сергей</p>
-                                    <p>Заместитель</p>
-                                </div>
-                            </div>
-
-                            <div class="tab-block-slide__items">
-                                <img src="/img/fourth2.jpg" alt="">
-                                <div class="tab-block-slide__items-text">
-                                    <p>Виктория</p>
-                                    <p>Маркетолог</p>
+                        <div class="wrapper-tab">
+                            <div class="wrapper-tab-container swiper">
+                                <button class="wrapper-tab-container-btnprev btns">
+                                    <img src="/icons/prev.svg" alt="">
+                                </button>
+                                <button class="wrapper-tab-container-btnnext btns">
+                                    <img src="/icons/next.svg" alt="">
+                                </button>
+                                <div class="wrapper-tab-container-track swiper-wrapper">
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>
+                                                Большой опыт  и профессионализм в <br> комплексном оформлении Вашего праздника
+                                            </p>
+                                            <p>Елена</p>
+                                            <p>+7 (978) ХХХ-ХХ-ХХ</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Сергей</p>
+                                            <p>Заместитель</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-tab-container-track-item swiper-slide">
+                                        <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                                        <div class="wrapper-tab-container-track-item__text">
+                                            <p>Виктория</p>
+                                            <p>Маркетолог</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -911,28 +835,30 @@
 
             <div class="hotel-block">
 
-                <div class="hotel-block__img" data-carousel>
-                    <div data-slides>
-                        <img class="hotel-block__img-item" src="/img/wedding.jpg" alt="restourant" data-active>
-                        <img class="hotel-block__img-item" src="/img/fourth1.jpg" alt="restourant">
-                        <img class="hotel-block__img-item" src="/img/fourth2.jpg" alt="restourant">
+                <div class="wrapper">
+                    <div class="wrapper-container swiper">
+                        <button class="wrapper-container-btnprev btns">
+                            <img src="/icons/prev.svg" alt="">
+                        </button>
+                        <button class="wrapper-container-btnnext btns">
+                            <img src="/icons/next.svg" alt="">
+                        </button>
+                        <div class="wrapper-container-track swiper-wrapper">
+                            <div class="wrapper-container-track-item swiper-slide">
+                                <img src="/img/wedding.jpg" alt="">
+                            </div>
+                            <div class="wrapper-container-track-item swiper-slide">
+                                <img src="/img/slides/slideFirst/ceremony/slideSecond.jpg" alt="">
+                            </div>
+                            <div class="wrapper-container-track-item swiper-slide">
+                                <img src="/img/fourth1.jpg" alt="">
+                            </div>
+                            <div class="wrapper-container-track-item swiper-slide">
+                                <img src="/img/fourth2.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-
-                    <button class="hotel-block__img-btn prev" data-carousel-button="prev">
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                        </svg>
-                    </button>
-                    <button class="hotel-block__img-btn next" data-carousel-button="next">
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                        </svg>  
-                    </button>
-                    
                 </div>
-
                 <p class="hotel-block__text">Свадьба – это день когда близкие  и родные люди собираются вместе со всех уголков земли, чтобы разделить эти приятные эмоции трогательного дня совместно с молодыми. Отель La Grace поможет разместить ваших гостей в комфортных номерах, каждый из которых обладает своим захватывающим оригинальным дизайнерским решением. При необходимости мы позаботимся о бронировании и трансфере в гостевые дома наших партнёров на Азовском побережье. </p>
             </div>
 
@@ -973,48 +899,40 @@
         <section class="team">
             <h2 class="team-title">Наша команда</h2>
 
-            <div class="team-block" data-carousel="">
-
-                <button class="team-block__btn prev" data-carousel-button="prev">
-                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.500006 23.4547C0.500007 10.7781 10.7966 0.499985 23.5 0.499987C36.2035 0.499988 46.5 10.7781 46.5 23.4547C46.5 36.1313 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.500005 36.1313 0.500006 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6689 18.2776C33.631 18.8296 32.8091 19.9696 31.8412 20.8116C30.4171 22.0503 30.4326 22.7425 31.9221 24.4482C37.8979 31.2913 27.5646 36.467 18.5639 30.4473C16.3258 28.9503 7.7169 24.0174 7.56369 22.741C7.41048 21.4647 8.73459 20.7909 13.5637 18.2497C16.7092 15.8895 24.4615 14.4297 26.6882 14.2575C29.9711 14.002 33.8115 16.214 33.6689 18.2776ZM24.5637 16.4742C22.3591 16.9215 18.9073 18.0782 15.5637 19.7468C12.5637 21.2439 9.06369 22.741 12.0637 24.2381C18.0637 28.7295 31.5637 35.4376 31.2415 27.2142C31.0791 25.3285 30.4781 24.8028 27.2592 23.7355C23.8055 22.5893 23.6319 22.4239 25.3087 21.8695C29.9887 20.3232 31.2218 19.0891 29.7592 17.4142C28.7546 16.2638 28.0637 15.4761 24.5637 16.4742Z" fill="#5A8CC1"/>
-                    </svg>
-                </button>
-                <button class="team-block__btn next" data-carousel-button="next">
-                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M46.5 23.4547C46.5 36.1314 36.2035 46.4094 23.5 46.4094C10.7965 46.4094 0.5 36.1314 0.5 23.4547C0.5 10.7781 10.7965 0.5 23.5 0.5C36.2035 0.5 46.5 10.7781 46.5 23.4547Z" fill="#EBF1FD" fill-opacity="0.87" stroke="#5A8CC1"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3311 18.2115C13.369 18.7635 14.1909 19.9034 15.1588 20.7454C16.5829 21.9842 16.5674 22.6764 15.0779 24.3821C9.10214 31.2252 19.4354 36.4008 28.436 30.3812C30.6742 28.8842 39.2831 23.9513 39.4363 22.6749C39.5895 21.3986 38.2654 20.7248 33.4363 18.1836C30.2908 15.8234 22.5385 14.3636 20.3117 14.1914C17.0289 13.9359 13.1885 16.1479 13.3311 18.2115ZM22.4363 16.4081C24.6409 16.8553 28.0927 18.0121 31.4363 19.6807C34.4363 21.1778 37.9363 22.6749 34.9363 24.172C28.9363 28.6634 15.4363 35.3715 15.7585 27.1481C15.9209 25.2624 16.5219 24.7366 19.7408 23.6694C23.1945 22.5231 23.3681 22.3577 21.6913 21.8034C17.0113 20.2571 15.7782 19.0229 17.2408 17.3481C18.2454 16.1977 18.9363 15.41 22.4363 16.4081Z" fill="#5A8CC1"/>
-                    </svg>  
-                </button>
-
-                <div class="team-block__img" data-slides="">
-
-                    <div class="team-block__items" data-active="">
-                        <img src="/img/team1.jpg" alt="">
-                        <div class="team-block__items-text">
-                            <p>Анастасия</p>
-                            <p>Управляющая</p>
+            <div class="wrapper-tab">
+                <div class="wrapper-tab-container swiper">
+                    <button class="wrapper-tab-container-btnprev btns">
+                        <img src="/icons/prev.svg" alt="">
+                    </button>
+                    <button class="wrapper-tab-container-btnnext btns">
+                        <img src="/icons/next.svg" alt="">
+                    </button>
+                    <div class="wrapper-tab-container-track swiper-wrapper">
+                        <div class="wrapper-tab-container-track-item swiper-slide">
+                            <img class="wrapper-tab-container-track-item__img" src="/img/slides/teamSlide/team1.jpg" alt="">
+                            <div class="wrapper-tab-container-track-item__text">
+                                <p>
+                                    Анасатасия
+                                </p>
+                                <p>Управляющая</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="team-block__items">
-                        <img src="/img/fourth1.jpg" alt="">
-                        <div class="team-block__items-text">
-                            <p>Сергей</p>
-                            <p>Заместитель</p>
+                        <div class="wrapper-tab-container-track-item swiper-slide">
+                            <img class="wrapper-tab-container-track-item__img" src="/img/fourth1.jpg" alt="">
+                            <div class="wrapper-tab-container-track-item__text">
+                                <p>Сергей</p>
+                                <p>Заместитель</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="team-block__items">
-                        <img src="/img/fourth2.jpg" alt="">
-                        <div class="team-block__items-text">
-                            <p>Виктория</p>
-                            <p>Маркетолог</p>
+                        <div class="wrapper-tab-container-track-item swiper-slide">
+                            <img class="wrapper-tab-container-track-item__img" src="/img/fourth2.jpg" alt="">
+                            <div class="wrapper-tab-container-track-item__text">
+                                <p>Виктория</p>
+                                <p>Маркетолог</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </div>
@@ -1087,6 +1005,7 @@
         </section>
     </footer>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/src/script/script.js"></script>
 </body>
 </html>

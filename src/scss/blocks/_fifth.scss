@@ -1,5 +1,6 @@
 .fifth-block {
     margin: 140px auto auto;
+    width: 100%;
 
     &__title {
         font-family: $ff;
@@ -156,6 +157,7 @@
 
 @media (min-width: 472px) {
     .fifth-block {
+        width: 100%;
         &__second {
             &-box {
                 margin: auto;
@@ -239,6 +241,7 @@
                 justify-content: space-between;
                 margin-top: 130px;
                 margin-left: 70px;
+                width: 300px;
                 height: 485px;          
             }
     
@@ -252,7 +255,7 @@
     
             &-vectors {
                 display: flex;
-                width: 467px;
+                width: 290px;
                 align-items: center;
                 justify-content: space-between;        
             }
@@ -269,7 +272,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                width: 540px;
+                width: 300px;
                 height: 485px;
                 margin: auto;
                 margin-right: 65px;
@@ -286,7 +289,7 @@
     
             &-vectors {
                 display: flex;
-                width: 467px;
+                width: 290px;
                 align-items: center;
                 justify-content: space-between;        
             }
@@ -306,11 +309,20 @@
             &-box {
                 width: 505px;
             }
+
+            &-vectors {
+                width: 100%;
+            }
         }
 
         &__second {
             &-box {
+                width: 505px;
                 align-items: center;
+            }
+
+            &-vectors {
+                width: 100%;
             }
         }
     }
