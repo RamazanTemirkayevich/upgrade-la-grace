@@ -13,7 +13,7 @@
         color: $rgba-c;
     }
 
-    .wrapper-tab {
+    .team-wrapper-tab {
         margin-left: 0;
         margin-top: 40px;
         width: 1260px;
@@ -51,6 +51,9 @@
                 position: absolute;
                 display: flex;
                 left: 0;
+                width: 100%;
+                min-width: 0;
+                
     
                 &-item {
                     width: 70%;
@@ -95,7 +98,7 @@
             width: 100%;
         }
 
-        .wrapper-tab {
+        .team-wrapper-tab {
             width: 290px;
             margin: 10px auto auto auto;
 
@@ -176,8 +179,8 @@
             height: unset;
         }
 
-        .wrapper-tab {
-            width: 100%;
+        .team-wrapper-tab {
+            width: 859px;
 
             &-container {
                 &-btnnext {
@@ -204,13 +207,21 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .team {
+        .team-wrapper-tab {
+            width: 1056px;
+        }
+    }
+}
+
 @media (min-width: 1440px) {
     .team {
         margin: 140px auto auto auto;
 
-        .wrapper-tab {
+        .team-wrapper-tab {
             margin: 40px auto auto auto;
-            width: 1272px;
+            width: 1258px;
 
             &-container {
                 &-track {

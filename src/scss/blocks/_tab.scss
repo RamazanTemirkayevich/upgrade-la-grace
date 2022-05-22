@@ -53,6 +53,7 @@
                 width: 100%;
                 overflow: hidden;
                 margin-left: 0;
+                min-width: 0;
         
                 &-btnprev {
                     position: absolute;
@@ -310,7 +311,7 @@
         &-slide {
             position: relative;
             display: none;
-            width: 871px;
+            width: 857px;
             margin-top: 40px;
             margin-right: 0;
             background: rgba(191, 219, 247, 0.2);
@@ -430,6 +431,14 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .tab-block {
+        &-slide {
+            width: 946px;
+        }
+    }
+}
+
 @media (min-width: 1440px) {
     .tab-block {
         width: 100%;
@@ -449,7 +458,7 @@
         }
 
         &-slide {
-            width: 1260px;
+            width: 1258px;
 
             .wrapper-tab {
                 &-container {

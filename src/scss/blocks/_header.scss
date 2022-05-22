@@ -130,6 +130,8 @@
 @media (min-width: 320px) {
     .header {
         &-main {
+            // -webkit-column-width: 100%;
+            // -moz-column-width: 100%;
             width: 100%;
             &__img {
 
@@ -173,6 +175,17 @@
         &-main {
             position: relative;
             width: 100%;
+
+            &__img {
+                &-btn {
+                    &--prev {
+                        left: 11em;
+                    }
+                    &--next {
+                        right: 11em;
+                    }
+                }
+            }
     
             &__btn {
                 position: absolute;
@@ -229,7 +242,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
     .header {
         width: 100%;
 
@@ -244,6 +257,38 @@
                     &--next {
                         right: 12em;
                     }
+                }
+            }
+        }
+
+        &-container {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 136px;
+            top: 62px;
+            border-left: 2px solid #FFFFFF;
+            z-index: 2;
+    
+            &__name {
+                display: flex;
+                flex-direction: column;
+                margin-left: 29px;
+    
+                &-title {
+                    font-family: $ff;
+                    font-weight: 400;
+                    font-size: 64px;
+                    color: #FFFFFF;
+                    letter-spacing: $lc;
+                }
+        
+                &-subtitle {
+                    margin-top: 10px;
+                    font-family: $ff;
+                    color: #FFFFFF;
+                    font-size: 28px;
+                    letter-spacing: $lc;
                 }
             }
         }

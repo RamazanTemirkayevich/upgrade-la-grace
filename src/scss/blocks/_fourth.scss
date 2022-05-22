@@ -622,8 +622,8 @@
                         }
 
                         &>p {
-                            width: 500px;
-                            font-size: 16px;
+                            width: 451px;
+                            font-size: 15px;
                         }
                     }
 
@@ -672,7 +672,7 @@
                     &.active {
                         display: flex;
                         flex-direction: column;
-                        width: 993px;
+                        width: 882px;
 
                         &>p {
                             margin-top: 4em;
@@ -690,11 +690,25 @@
                 }
 
                 &__block:nth-child(1n+2) {
-                    height: 34em;
+                    height: 32em;
                 }
 
                 &__block:last-child {
-                    height: 34em;
+                    height: 32em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .fourth-block {
+        &__tabs {
+            &-body {
+                &__block {
+                    &.active {
+                        width: 1055px;
+                    }
                 }
             }
         }
